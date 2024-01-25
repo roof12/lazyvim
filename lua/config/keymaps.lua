@@ -17,3 +17,6 @@ end)
 vim.keymap.set("n", "<F12>", function()
   require("dap").step_out()
 end)
+
+-- backspace goes to previous file
+vim.keymap.set("n", "<bs>", ":edit #<cr>", { silent = true })
